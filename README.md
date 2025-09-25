@@ -1,45 +1,27 @@
-# Java Swing Calculator
-A simple, clean, and functional graphical calculator application built using Java's Swing library. This project provides a standard calculator interface for performing basic arithmetic operations.
+# Django Calculator App
+A simple web-based calculator application built using Django and Python. This project provides a web interface for performing basic arithmetic operations.
 
-# Features
-Basic Arithmetic: Perform addition, subtraction, multiplication, and division.
+## Features
+- Basic Arithmetic: Perform addition, subtraction, multiplication, and division.
+- Web Interface: Clean, responsive HTML form.
+- Error Handling: Prevents division by zero and displays an error message.
 
-Decimal Support: Includes a decimal point for floating-point calculations.
+## Prerequisites
+- Python 3.8 or higher
+- Django 5.2.6
 
-Clear and Delete:
+## Installation
+1. Clone the repository.
+2. Navigate to the `Calculator App` directory.
+3. Create a virtual environment: `python -m venv .venv` (or use the existing one).
+4. Activate the virtual environment: `.venv\Scripts\activate` (Windows).
+5. Install dependencies: `pip install -r requirements.txt`.
+6. Run migrations: `python manage.py migrate`.
+7. Start the server: `python manage.py runserver`.
 
-C (Clear): Resets the entire calculation and clears the display.
+## Usage
+Open your browser and go to `http://127.0.0.1:8000/` to use the calculator.
 
-Del (Delete): Removes the last entered digit.
-
-User-Friendly Interface: A clean, intuitive layout that is easy to use.
-
-Error Handling: Prevents division by zero and displays an error message.
-
-# Prerequisites
-To compile and run this application, you must have the Java Development Kit (JDK) installed on your system. Version 8 or higher is recommended.
-
-You can download the latest JDK from the official Oracle website or use an open-source alternative like OpenJDK.
-
-# How to Compile and Run
-You can run this project from any standard Java IDE (like Eclipse, IntelliJ, or VS Code with the Java Extension Pack) or directly from the command line.
-
-From the Command Line
-Save the Code: Save the provided Java code into a file named Calculator.java.
-
-Open a Terminal: Navigate to the directory where you saved the Calculator.java file.
-
-Compile the Code: Use the Java compiler (javac) to create the .class file.
-
-javac Calculator.java
-
-Run the Application: Use the Java runtime (java) to execute the compiled code.
-
-java Calculator
-
-A new window containing the calculator application should appear on your screen.
-
-# Built With
-Java - The core programming language.
-
-Java Swing - The GUI widget toolkit used for creating the user interface.
+## Built With
+- Python
+- Django

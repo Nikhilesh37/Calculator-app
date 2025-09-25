@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 50px; }
+        form { max-width: 300px; margin: auto; }
+        input, select, button { display: block; width: 100%; margin: 10px 0; padding: 10px; }
+        .result { margin-top: 20px; font-size: 1.2em; }
+    </style>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <form method="post">
+        {% csrf_token %}
+        <input type="number" name="num1" step="any" placeholder="Enter first number" required>
+        <input type="number" name="num2" step="any" placeholder="Enter second number" required>
+        <select name="operation" required>
+            <option value="add">Add</option>
+            <option value="subtract">Subtract</option>
+            <option value="multiply">Multiply</option>
+            <option value="divide">Divide</option>
+        </select>
+        <button type="submit">Calculate</button>
+    </form>
+    {% if result is not None %}
+        <div class="result">Result: {{ result }}</div>
+    {% endif %}
+</body>
+</html>
